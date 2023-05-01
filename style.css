@@ -1,0 +1,321 @@
+/* Global styles */
+
+/* Set default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set background color and font for the body */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    height: 100%;
+  }
+  
+  /* Style the header section */
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(240, 237, 243);
+    /* background-color: #222;
+    color: #fff; */
+  }
+  
+  header img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+  
+  /* Style the menu section */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: #444;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav input[type="text"] {
+    width: 200px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  nav input[type="submit"] {
+    background-color: #fff;
+    color: #444;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .flex-body{
+    display: flex;
+    flex-direction: column;
+  }
+  /* Style the main section */
+  main {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    gap: 20px;
+    padding: 0 20px;
+    background-color: rgb(240, 237, 243);
+    min-height: 100vh;
+  }
+  
+  main h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
+  
+  main p {
+    margin-bottom: 20px;
+  }
+  
+  main h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  main img {
+    /* width: 30%; */
+    height: auto;
+  }
+  
+  /* Style the aside section */
+  .aside{
+    background: #d4d4d4;
+    padding: 20px;
+    }
+
+  aside {
+    padding: 20px;
+  }
+  
+  aside h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  aside table {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  aside td {
+    padding: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  aside td:first-child {
+    font-weight: bold;
+  }
+  
+  aside button {
+    background-color: #fff;
+    color: #444;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Style the footer section */
+  footer {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    /* position: fixed;
+    bottom: 0;
+    width: 100%; */
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 0.8em;
+  }
+  
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+  
+    nav label:hover {
+      color: #fff;
+    }
+  
+    nav input[type="checkbox"] {
+      display: none;
+    }
+  
+    nav input[type="checkbox"]:checked ~ ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      background-color: #444;
+      position: absolute;
+      top: 50px;
+      left: 0;
+    }
+  
+    nav input[type="text"] {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    main {
+      display: flex;
+      flex-direction: column;
+      padding: 20px 10px;
+      min-height: 100vh;
+    }
+  
+    main h1 {
+      font-size: 1.8em;
+      margin-bottom: 10px;
+    }
+  
+    main img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #444;
+    color: #fff;
+    height: 50px;
+    padding: 0 20px;
+  }
+  
+  .menu-toggle {
+    display: none;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+  
+  .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin-right: 20px;
+  }
+  
+  .menu a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .search-box {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-box input[type="text"] {
+    width: 200px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .search-box button {
+    background-color: #fff;
+    color: #444;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .menu {
+      display: none;
+      flex-direction: column;
+      background-color: #444;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      right: 0;
+      z-index: 1;
+    }
+  
+    .menu li {
+      margin: 10px 0;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    .search-box {
+      display: none;
+    }
+  
+    nav.active .menu {
+      display: flex;
+    }
+  }
+
+  table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 240px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+  
+tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
