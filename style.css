@@ -20,9 +20,9 @@
     justify-content: center;
     align-items: center;
     height: 80px;
-    background-color: rgb(240, 237, 243);
-    /* background-color: #222;
-    color: #fff; */
+    /* background-color: rgb(240, 237, 243); */
+    background-color: #222;
+    color: #fff;
   }
   
   header img {
@@ -145,7 +145,90 @@
     border-radius: 5px;
     cursor: pointer;
   }
+
+  .aside table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+  }
   
+  .aside th,
+  .aside td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  .aside th {
+    background-color: #ddd;
+    font-weight: bold;
+  }
+
+  .aside tr:first-child td{
+    border: 3px dotted whitesmoke;
+    border-collapse: collapse;
+  }
+  
+  .aside tr:nth-child(odd) {
+    background-color: #333333;
+    color: white;
+  }
+  
+  .aside td:last-child {
+    text-align: right;
+  }
+  
+  .aside button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .aside button:hover {
+    background-color: #3e8e41;
+  }
+  
+  .aside td[colspan="2"] {
+    text-align: center;
+  }
+  
+  
+  .products, .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .product {
+    width: 300px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .product img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .product h2 {
+    margin: 10px;
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+  }
+
   /* Style the footer section */
   footer {
     background-color: #444;
@@ -290,32 +373,16 @@
     }
   }
 
-  table {
-    border-collapse: collapse;
-    margin: 25px 0;
-    font-size: 0.9em;
-    font-family: sans-serif;
-    min-width: 240px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-}
-thead tr {
-    background-color: #009879;
-    color: #ffffff;
-    text-align: left;
-}
-  
-tbody tr {
-    border-bottom: 1px solid #dddddd;
-}
+  .content {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+  }
 
-tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
-}
-
-tbody tr:last-of-type {
-    border-bottom: 2px solid #009879;
-}
-tbody tr.active-row {
-    font-weight: bold;
-    color: #009879;
-}
+  .ml-20{
+    margin-left: 20px;
+  }
+    
